@@ -7,12 +7,71 @@
     <title>Streetsight Landing page</title>
 </head>
 <body>
-    <section id="header"></section>
+
+        <!-- Surbhi(header and hero) -->
+
+        <section id="hero" class="hero-section">
+
+            <!-- Header / Navbar -->
+            <header class="navbar">
+        
+              <!-- Logo -->
+              <div class="logo">
+                <img src="assets/logo.svg" alt="Street Sight Logo" />
+              </div>
+        
+              <!-- Menu -->
+              <div class="nav-container">
+                <nav class="nav-links">
+                  <ul>
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#choose-us">Features</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            
+              <!-- Right side group -->
+              <div class="right-group">
+                <div class="login-btn">
+                  <button>Log in</button>
+                </div>
+                <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </header>
+        
+            <!-- Hero Text Content -->
+            <div class="hero-content">
+              <h1><span class="highlight">Less Hassle, More Dazzle</span></h1>
+              <h2>The Ultimate Billboard CRM</h2>
+              <p><i>Street Sight</i> is an all-in-one billboard management CRM that simplifies the way you manage billboards, assign clients, track campaigns, and analyze performance — all in one place.</p>
+              
+              <button class="cta-button">Start Free Trial</button>
+              <div class="scroll-cue">↓</div>
+            </div>
+        
+          </section>
+        
+          <!-- JavaScript to toggle nav -->
+          <script>
+            function toggleMenu() {
+              const navLinks = document.querySelector('.nav-links');
+              const hamburger = document.getElementById('hamburger');
+              navLinks.classList.toggle('show');
+              hamburger.classList.toggle('active');
+            }
+          </script>
 
     <!-- adila(about us, choose us, pdf) -->
 
      <!-- about us -->
-    <section id="about-us" >
+    <!-- <section id="about-us" >
         <div class="ad-about-us">
             <div class="ad-about-text">
                 <h2>ABOUT US</h2>
@@ -27,11 +86,11 @@
                 <img src="assets/billboard.png" alt="Billboard">
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- why choose us -->
 
-    <section id="choose-us" class="ad-choose-us">
+    <!-- <section id="choose-us" class="ad-choose-us">
         <h2>WHY CHOOSE US</h2>
             <p><i>Street Sight</i> simplifies outdoor advertising management with powerful tools</p>
                 <div class="ad-features">
@@ -54,11 +113,11 @@
                         </div>
                     </div>
                 </div>
-    </section>
+    </section> -->
 
     <!-- download pdf -->
 
-    <section id="pdf">
+    <!-- <section id="pdf">
             <div class="ad-pdf">
                 <p>Get all the details about <i>Street Sight</i> and how we can help transform your outdoor advertising business.</p>
                 <p>Download our project proposal to learn more!</p>
@@ -69,6 +128,6 @@
     </section>
 
     <section id="team"></section>
-    <section id="footer"></section> 
+    <section id="footer"></section>  -->
 </body>
 </html>
